@@ -1,8 +1,6 @@
 {
   "title": "Transformation",
   "description": "Generic Data Transformation Component",
-  "credentials": {
-  },
   "actions": {
     "transform": {
       "title": "Transform",
