@@ -20,7 +20,8 @@
   ],
   "dependencies": {
     "elasticio-node": "0.0.8",
-    "elasticio-sailor-nodejs": "^2.2.0"
+    "elasticio-sailor-nodejs": "^2.2.0",
+    "jsonata": "^1.3.0"
   },
   "scripts": {
     "pretest": "node_modules/.bin/eslint lib spec --ext .json --ext .js --fix",
