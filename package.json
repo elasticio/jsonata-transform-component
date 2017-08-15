@@ -18,7 +18,10 @@
     "integration",
     "elasticio-component"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "elasticio-node": "0.0.8",
+    "elasticio-sailor-nodejs": "^2.2.0"
+  },
   "scripts": {
     "pretest": "node_modules/.bin/eslint lib spec --ext .json --ext .js --fix",
     "test": "NODE_ENV=test mocha spec/*"
@@ -39,7 +42,7 @@
   },
   "engines": {
     "node": "8.1.3"
-  },  
+  },
   "repository": "elasticio/jsonata-transform-component",
   "license": "Apache-2.0"
 }
