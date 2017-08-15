@@ -1,0 +1,43 @@
+{
+  "name": "jsonata-transform-component",
+  "version": "1.0.0",
+  "description": "elastic.io integration component for data transformation with JSONata expression",
+  "homepage": "https://www.elastic.io",
+  "author": {
+    "name": "elastic.io GmbH",
+    "email": "info@elastic.io",
+    "url": "https://www.elastic.io"
+  },
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "jsonata",
+    "elasticio",
+    "ipaas",
+    "integration",
+    "elasticio-component"
+  ],
+  "dependencies": {
+  },
+  "scripts": {
+    "pretest": "node_modules/.bin/eslint lib spec --ext .json --ext .js --fix",
+    "test": "NODE_ENV=test mocha spec/*"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.1.1",
+    "eslint-config-xo-space": "^0.15.0",
+    "eslint-plugin-json": "^1.2.0",
+    "eslint-plugin-mocha": "^4.8.0",
+    "mocha": "^3.2.0"
+  },
+  "eslintConfig": {
+    "extends": "xo-space",
+    "env": {
+      "mocha": true
+    }
+  },
+  "repository": "elasticio/jsonata-transform-component",
+  "license": "Apache-2.0"
+}
