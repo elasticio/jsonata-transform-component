@@ -65,7 +65,7 @@ You can use following JSONata expressions to transform it:
 }
 ```
 
-result of that transofrmation will be the following JSON document:
+result of that transofrmation will be the following JSON document ([jsonata link](http://try.jsonata.org/B1ctn36ub)):
 
 ```json
 {
@@ -87,7 +87,7 @@ I hope you've got the idea. Now you can also do something more complicated, like
 }
 ```
 
-resulting in:
+resulting in ([jsonata link](http://try.jsonata.org/B1ctn36ub)):
 
 ```json
 {
