@@ -78,7 +78,7 @@ I hope you've got the idea. Now you can also do something more complicated, like
 
 ```jsonata
 {
-	"account": Account."Account Name",
+    "account": Account."Account Name",
     "products": Account.Order.Product.({
     	"name": $."Product Name",
         "revenue": (Price * Quantity)
