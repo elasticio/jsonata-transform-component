@@ -7,7 +7,11 @@ This component requires no authentication.
 
 ## How it works
 
+This component takes the incoming message body and applies the configured JSONata tranformation on it. It uses 
+a fact that JSONata expression is a superset of JSON document so that by default any valid JSON document is
+a valid JSONata expression.
 
+For example let's take this incoming sample:
 
 ## License
 
