@@ -9,9 +9,7 @@
         "expression": {
           "label": "JSONata Expression",
           "required": true,
-          "viewClass": "TextAreaWithNoteView",
-          "placeholder": "{\n\t\"fullName\" : user.firstName & user.lastName\n}",
-          "note": "You can use a multiline JSONata expression here that should be evaluated into JSON object"
+          "viewClass": "JSONataView"
         }
       },
       "metadata" : {
