@@ -108,6 +108,97 @@ resulting in ([jsonata link](http://try.jsonata.org/B1ctn36ub)):
 }
 ```
 
+## Array splitting
+
+Sometimes it is necessary to generate multiple outgoing message from a single incoming message, for example when:
+* You want to split a large incoming array to process each item individually to save resources (RAM)
+* You want to process a complex nested structure by splitting it into multiple less complex pieces
+* You want to split large item into many smaller items to increase reliability of the processing
+
+You can do it with JSONata transformer - when result of your transformation is an ``iterable`` (e.g. Array) then
+component action will emit each result of the array individually.
+
+Taking the example above and following JSONata expression:
+
+```jsonata
+Account.Order.Product[]
+```
+
+will produce following JSON:
+
+```json
+[
+  {
+    "Product Name": "Bowler Hat",
+    "ProductID": 858383,
+    "SKU": "0406654608",
+    "Description": {
+      "Colour": "Purple",
+      "Width": 300,
+      "Height": 200,
+      "Depth": 210,
+      "Weight": 0.75
+    },
+    "Price": 34.45,
+    "Quantity": 2
+  },
+  {
+    "Product Name": "Trilby hat",
+    "ProductID": 858236,
+    "SKU": "0406634348",
+    "Description": {
+      "Colour": "Orange",
+      "Width": 300,
+      "Height": 200,
+      "Depth": 210,
+      "Weight": 0.6
+    },
+    "Price": 21.67,
+    "Quantity": 1
+  }
+]
+```
+
+which will however be automatically split into two messages and emitted as following:
+
+__Message 1__:
+
+```json
+{
+    "Product Name": "Bowler Hat",
+    "ProductID": 858383,
+    "SKU": "0406654608",
+    "Description": {
+      "Colour": "Purple",
+      "Width": 300,
+      "Height": 200,
+      "Depth": 210,
+      "Weight": 0.75
+    },
+    "Price": 34.45,
+    "Quantity": 2
+  }
+```
+
+and __Message 2__:
+
+```json
+{
+    "Product Name": "Trilby hat",
+    "ProductID": 858236,
+    "SKU": "0406634348",
+    "Description": {
+      "Colour": "Orange",
+      "Width": 300,
+      "Height": 200,
+      "Depth": 210,
+      "Weight": 0.6
+    },
+    "Price": 21.67,
+    "Quantity": 1
+  }
+```
+
 ## License
 
 Apache-2.0 © [elastic.io GmbH](http://elastic.io)
