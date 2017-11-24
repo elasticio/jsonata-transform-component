@@ -27,4 +27,21 @@ describe('Transformation test', () => {
       expect(result).to.be.an('undefined');
     });
   });
+
+  it('should handle passthough properly', () => {
+    const msg = eioUtils.newMessageWithBody({
+      first: 'Renat',
+      last: 'Zubairov'
+    });
+    msg.passthrough = {
+      ps: 'psworks'
+    };
+    return transform.process(msg, {
+      expression: `{ "fullName": first & " " & elasticio.ps}`
+    }).then(result => {
+      expect(result.body).to.deep.equal({
+        fullName: 'Renat psworks'
+      });
+    });
+  });
 });
