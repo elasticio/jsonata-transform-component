@@ -1,4 +1,5 @@
-'use strict';
+/* eslint-disable arrow-body-style */
+
 const expect = require('chai').expect;
 const transform = require('../lib/actions/transform');
 const eioUtils = require('elasticio-node').messages;

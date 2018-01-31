@@ -19,12 +19,12 @@
     "elasticio-component"
   ],
   "dependencies": {
+    "@elastic.io/jsonata-moment": "1.0.14",
     "elasticio-node": "0.0.8",
-    "elasticio-sailor-nodejs": "^2.2.0",
-    "@elastic.io/jsonata-moment": "^1.0.12"
+    "elasticio-sailor-nodejs": "^2.2.0"
   },
   "scripts": {
-    "pretest": "node_modules/.bin/eslint lib spec --ext .json --ext .js --fix",
+    "pretest": "eslint lib spec --ext .json --ext .js --fix",
     "test": "NODE_ENV=test mocha spec/*"
   },
   "devDependencies": {
