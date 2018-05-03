@@ -21,7 +21,7 @@
   "dependencies": {
     "@elastic.io/jsonata-moment": "1.0.15",
     "elasticio-node": "0.0.9",
-    "elasticio-sailor-nodejs": "^2.2.0"
+    "elasticio-sailor-nodejs": "^2.2.1"
   },
   "scripts": {
     "pretest": "eslint lib spec --ext .json --ext .js --fix",
@@ -32,8 +32,8 @@
     "eslint": "^3.1.1",
     "eslint-config-xo-space": "^0.15.0",
     "eslint-plugin-json": "^1.2.0",
-    "eslint-plugin-mocha": "^4.8.0",
-    "mocha": "^3.2.0"
+    "eslint-plugin-mocha": "^4.12.1",
+    "mocha": "^3.5.3"
   },
   "eslintConfig": {
     "extends": "xo-space",
