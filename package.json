@@ -21,7 +21,7 @@
   "dependencies": {
     "@elastic.io/jsonata-moment": "1.0.15",
     "elasticio-node": "0.0.9",
-    "elasticio-sailor-nodejs": "git://github.com/elasticio/sailor-nodejs.git#9a1d260a52b3d6c902d4d5156ba6c936a13d8f27",
+    "elasticio-sailor-nodejs": "git://github.com/elasticio/sailor-nodejs.git#be4f684275da28917cd49f4a621630802691df05",
     "request": "^2.88.0"
   },
   "scripts": {
