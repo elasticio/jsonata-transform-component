@@ -6,6 +6,10 @@
       "title": "Transform",
       "main": "./lib/actions/transform.js",
       "fields": {
+        "dontSplitArray": {
+          "label": "Retain resulting data as an array",
+          "viewClass": "CheckBoxView"
+        },
         "expression": {
           "label": "JSONata Expression",
           "required": true,
