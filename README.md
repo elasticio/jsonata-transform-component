@@ -107,6 +107,10 @@ resulting in ([jsonata link](http://try.jsonata.org/B1ctn36ub)):
   ]
 }
 ```
+## Options
+JSONata that returns an array may be received in two ways. If **Retain resulting data as an array** is selected on the configuration page, the results will be maintained as an array.
+
+Alternatively, the results of the array will automatically be split by its elements into multiple objects.
 
 ## License
 
