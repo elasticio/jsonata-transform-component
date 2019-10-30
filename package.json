@@ -19,7 +19,7 @@
     "elasticio-component"
   ],
   "dependencies": {
-    "@elastic.io/jsonata-moment": "1.1.4",
+    "@elastic.io/jsonata-moment": "1.1.5-dev1",
     "elasticio-node": "0.0.9",
     "elasticio-sailor-nodejs": "2.2.3",
     "request": "^2.88.0"
