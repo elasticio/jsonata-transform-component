@@ -1,6 +1,7 @@
 {
   "title": "Transformation",
   "description": "Generic Data Transformation Component",
+  "buildType":"docker",
   "actions": {
     "transform": {
       "title": "Transform",

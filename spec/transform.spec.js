@@ -1,12 +1,15 @@
 /* eslint-disable arrow-body-style */
 
-const expect = require('chai').expect;
+const {expect} = require('chai');
 const transform = require('../lib/actions/transform');
-const eioUtils = require('elasticio-node').messages;
+const {messages} = require('elasticio-node');
+const bunyan = require('bunyan');
+
+const logger = bunyan.createLogger({name: 'dummy'});
 
 describe('Transformation test', () => {
   it('should handle simple transforms', () => {
-    return transform.process(eioUtils.newMessageWithBody({
+    return transform.process.call({logger}, messages.newMessageWithBody({
       first: 'Renat',
       last: 'Zubairov'
     }), {
@@ -19,7 +22,7 @@ describe('Transformation test', () => {
   });
 
   it('should not produce an empty message if transformation returns undefined', () => {
-    return transform.process(eioUtils.newMessageWithBody({
+    return transform.process.call({logger}, messages.newMessageWithBody({
       first: 'Renat',
       last: 'Zubairov'
     }), {
@@ -30,14 +33,14 @@ describe('Transformation test', () => {
   });
 
   it('should handle passthough properly', () => {
-    const msg = eioUtils.newMessageWithBody({
+    const msg = messages.newMessageWithBody({
       first: 'Renat',
       last: 'Zubairov'
     });
     msg.passthrough = {
       ps: 'psworks'
     };
-    return transform.process(msg, {
+    return transform.process.call({logger}, msg, {
       expression: `{ "fullName": first & " " & elasticio.ps}`
     }).then(result => {
       expect(result.body).to.deep.equal({
