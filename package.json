@@ -1,6 +1,6 @@
 {
   "name": "jsonata-transform-component",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "elastic.io integration component for data transformation with JSONata expression",
   "homepage": "https://www.elastic.io",
   "author": {
@@ -29,19 +29,13 @@
     "test": "NODE_ENV=test mocha spec/*"
   },
   "devDependencies": {
-    "bunyan": "1.8.12",
+    "@elastic.io/component-logger": "0.0.1",
     "chai": "3.5.0",
-    "eslint": "3.19.0",
-    "eslint-config-xo-space": "0.15.0",
-    "eslint-plugin-json": "1.2.0",
-    "eslint-plugin-mocha": "4.12.1",
+    "eslint": "5.6.1",
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-config-airbnb-base": "13.1.0",
+    "eslint-plugin-import": "2.14.0",
     "mocha": "3.5.3"
-  },
-  "eslintConfig": {
-    "extends": "xo-space",
-    "env": {
-      "mocha": true
-    }
   },
   "engines": {
     "node": "8.1.3"
