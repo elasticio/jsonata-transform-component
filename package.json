@@ -1,6 +1,6 @@
 {
   "name": "jsonata-transform-component",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "elastic.io integration component for data transformation with JSONata expression",
   "homepage": "https://www.elastic.io",
   "author": {
