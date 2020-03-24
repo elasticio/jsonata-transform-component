@@ -19,7 +19,7 @@
     "elasticio-component"
   ],
   "dependencies": {
-    "@elastic.io/component-commons-library": "^1.1.0",
+    "@elastic.io/component-commons-library": "1.1.0",
     "elasticio-node": "0.0.9",
     "elasticio-sailor-nodejs": "2.5.4",
     "request": "2.88.0"
