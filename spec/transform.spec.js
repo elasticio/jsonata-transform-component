@@ -48,4 +48,40 @@ describe('Transformation test', () => {
       });
     });
   });
+
+  it('should handle getFlowVariables properly', () => {
+    const msg = messages.newMessageWithBody({
+      first: 'Renat',
+      last: 'Zubairov'
+    });
+    msg.passthrough = {
+      ps: 'psworks'
+    };
+    const flowVariables = {
+      var1: 'value1',
+      var2: 'value2'
+    };
+    return transform.process.call({logger, getFlowVariables: () => flowVariables}, msg, {
+      expression: '$getFlowVariables()'
+    }).then(result => {
+      expect(result.body).to.deep.equal(flowVariables);
+    });
+  });
+
+  it('should call getPassthrough', () => {
+    const msg = messages.newMessageWithBody({
+      first: 'Renat',
+      last: 'Zubairov'
+    });
+    msg.passthrough = {
+      ps: 'psworks'
+    };
+    return transform.process.call({logger}, msg, {
+      expression: '$getPassthrough()'
+    }).then(result => {
+      expect(result.body).to.deep.equal({
+        ps: 'psworks'
+      });
+    });
+  });
 });

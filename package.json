@@ -1,6 +1,6 @@
 {
   "name": "jsonata-transform-component",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "elastic.io integration component for data transformation with JSONata expression",
   "homepage": "https://www.elastic.io",
   "author": {
@@ -19,7 +19,7 @@
     "elasticio-component"
   ],
   "dependencies": {
-    "@elastic.io/jsonata-moment": "1.1.4",
+    "@elastic.io/component-commons-library": "1.1.0",
     "elasticio-node": "0.0.9",
     "elasticio-sailor-nodejs": "2.5.4",
     "request": "2.88.0"
