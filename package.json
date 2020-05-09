@@ -1,6 +1,6 @@
 {
   "name": "jsonata-transform-component",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "elastic.io integration component for data transformation with JSONata expression",
   "homepage": "https://www.elastic.io",
   "author": {
@@ -19,32 +19,26 @@
     "elasticio-component"
   ],
   "dependencies": {
-    "@elastic.io/component-commons-library": "1.1.0",
+    "@elastic.io/component-commons-library": "1.1.2",
     "elasticio-node": "0.0.9",
-    "elasticio-sailor-nodejs": "2.5.4",
-    "request": "2.88.0"
+    "elasticio-sailor-nodejs": "2.6.7",
+    "request": "2.88.2"
   },
   "scripts": {
     "pretest": "eslint lib spec --ext .json --ext .js --fix",
     "test": "NODE_ENV=test mocha spec/*"
   },
   "devDependencies": {
-    "bunyan": "1.8.12",
-    "chai": "3.5.0",
-    "eslint": "3.19.0",
-    "eslint-config-xo-space": "0.15.0",
-    "eslint-plugin-json": "1.2.0",
-    "eslint-plugin-mocha": "4.12.1",
-    "mocha": "3.5.3"
-  },
-  "eslintConfig": {
-    "extends": "xo-space",
-    "env": {
-      "mocha": true
-    }
+    "@elastic.io/component-logger": "0.0.1",
+    "chai": "4.2.0",
+    "eslint": "7.0.0",
+    "eslint-config-airbnb": "18.1.0",
+    "eslint-config-airbnb-base": "14.1.0",
+    "eslint-plugin-import": "2.20.2",
+    "mocha": "7.1.2"
   },
   "engines": {
-    "node": "8.1.3"
+    "node": "12"
   },
   "repository": "elasticio/jsonata-transform-component",
   "license": "Apache-2.0"
