@@ -38,6 +38,7 @@
     "eslint-config-xo-space": "0.15.0",
     "eslint-plugin-json": "1.2.0",
     "eslint-plugin-mocha": "4.12.1",
+    "eslint-config-airbnb": "17.1.0",
     "eslint-config-airbnb-base": "14.1.0",
     "eslint-plugin-import": "2.20.2",
     "mocha": "3.5.3"
