@@ -20,7 +20,7 @@ describe('Transformation test', () => {
   });
 
   it('should not produce an empty message if transformation returns undefined', () => {
-    return transform.process.call({logger}, messages.newMessageWithBody({
+    return transform.process.call({ logger }, messages.newMessageWithBody({
       first: 'Renat',
       last: 'Zubairov',
     }), {

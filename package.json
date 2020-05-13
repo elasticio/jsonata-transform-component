@@ -34,7 +34,7 @@
   "devDependencies": {
     "bunyan": "1.8.12",
     "chai": "3.5.0",
-    "eslint": "3.19.0",
+    "eslint": "7.0.0",
     "eslint-config-xo-space": "0.15.0",
     "eslint-plugin-json": "1.2.0",
     "eslint-plugin-mocha": "4.12.1",
