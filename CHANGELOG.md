@@ -1,4 +1,4 @@
-## 1.0.4 (May 9, 2019)
+## 1.0.4 (May 19, 2019)
 
 * Update sailor version to 2.6.7
 * Fix codestyle
