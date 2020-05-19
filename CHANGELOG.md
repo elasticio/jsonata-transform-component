@@ -1,3 +1,8 @@
+## 1.0.4 (May 19, 2019)
+
+* Update sailor version to 2.6.7
+* Fix codestyle
+
 ## 1.0.3 (March 26, 2020)
 
 * Add new jsonata functions getPassthrough and getFlowVarriables
@@ -5,6 +10,7 @@
 ## 1.0.2 (December 24, 2019)
 
 * Update sailor version to 2.5.4
+
 ## 1.0.1 (December 06, 2019)
 
 * Update sailor version to 2.5.1
