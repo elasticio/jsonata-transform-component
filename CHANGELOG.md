@@ -1,3 +1,7 @@
+## 1.0.5 (September 20, 2020)
+
+* Remove sensitive data from component logs
+
 ## 1.0.4 (May 19, 2019)
 
 * Update sailor version to 2.6.7
