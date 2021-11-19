@@ -1,5 +1,6 @@
 {
   "title": "Transformation",
+  "version": "1.0.10",
   "description": "Generic Data Transformation Component",
   "buildType":"docker",
   "actions": {
