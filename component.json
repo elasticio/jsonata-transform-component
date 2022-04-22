@@ -1,8 +1,7 @@
 {
   "title": "Transformation",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Generic Data Transformation Component",
-  "buildType":"docker",
   "actions": {
     "transform": {
       "title": "Transform",
@@ -14,8 +13,8 @@
           "viewClass": "JSONataView"
         }
       },
-      "metadata" : {
-        "out" : {}
+      "metadata": {
+        "out": {}
       }
     }
   }
