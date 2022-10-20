@@ -1,3 +1,8 @@
+## 1.0.12 (October 21, 2022)
+
+* Update Sailor version to 2.7.1
+* Update component-commons-library to 3.1.1 to support Jsonata 1.8.6
+
 ## 1.0.11 (April 08, 2022)
 
 * Update Sailor version to 2.6.27
