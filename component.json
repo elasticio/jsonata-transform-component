@@ -1,6 +1,6 @@
 {
   "title": "Transformation",
-  "version": "1.0.12-dev.1",
+  "version": "1.0.12",
   "description": "Generic Data Transformation Component",
   "actions": {
     "transform": {
