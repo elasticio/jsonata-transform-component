@@ -26,9 +26,9 @@
     "node": "18.x"
   },
   "dependencies": {
-    "@elastic.io/component-commons-library": "3.2.0-dev.5",
+    "@elastic.io/component-commons-library": "^3.2.0-dev.6",
     "elasticio-node": "0.0.9",
-    "elasticio-sailor-nodejs": "2.7.2-dev.2",
+    "elasticio-sailor-nodejs": "^2.7.2-dev.3",
     "request": "2.88.0"
   },
   "devDependencies": {
