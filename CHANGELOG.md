@@ -1,3 +1,8 @@
+## 1.0.13 (March 22, 2024)
+
+* Updated Sailor version to 2.7.2
+* Updated @elastic.io/component-commons-library to 3.2.0
+
 ## 1.0.12 (October 28, 2022)
 
 * Update Sailor version to 2.7.1
