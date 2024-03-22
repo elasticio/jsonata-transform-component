@@ -18,19 +18,21 @@
     "elasticio-component"
   ],
   "scripts": {
+    "audit": "better-npm-audit audit --level high --production",
     "pretest": "eslint lib spec --ext .json --ext .js --fix",
     "test": "NODE_ENV=test mocha spec/*"
   },
   "engines": {
-    "node": "14"
+    "node": "18.x"
   },
   "dependencies": {
-    "@elastic.io/component-commons-library": "3.1.2",
+    "@elastic.io/component-commons-library": "3.2.0",
     "elasticio-node": "0.0.9",
-    "elasticio-sailor-nodejs": "2.7.1",
+    "elasticio-sailor-nodejs": "2.7.2",
     "request": "2.88.0"
   },
   "devDependencies": {
+    "better-npm-audit": "3.7.3",
     "bunyan": "1.8.12",
     "chai": "3.5.0",
     "eslint": "8.25.0",
