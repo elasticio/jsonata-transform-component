@@ -1,5 +1,6 @@
-# jsonata-transform-component [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> Dedicated data transformation component for elastic.io platform based on JSONata
+# JSONata Transform Component [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+
+> A dedicated data transformation component for the elastic.io platform that is based on JSONata.
 
 ## Authentication
 
@@ -7,11 +8,9 @@ This component requires no authentication.
 
 ## How it works
 
-This component takes the incoming message body and applies the configured JSONata tranformation on it. It uses 
-a fact that JSONata expression is a superset of JSON document so that by default any valid JSON document is
-a valid JSONata expression.
+This component takes the incoming message body and applies the configured JSONata transformation to it. It uses the fact that a JSONata expression is a superset of a JSON document, so by default, any valid JSON document is a valid JSONata expression.
 
-For example let's take this sample incoming message body:
+For example, let's take this sample incoming message body:
 
 ```json
 {
@@ -56,7 +55,7 @@ For example let's take this sample incoming message body:
 }
 ```
 
-You can use following JSONata expressions to transform it:
+You can use the following JSONata expression to transform it:
 
 ```jsonata
 {
@@ -65,7 +64,7 @@ You can use following JSONata expressions to transform it:
 }
 ```
 
-result of that transofrmation will be the following JSON document ([jsonata link](http://try.jsonata.org/B1ctn36ub)):
+The result of that transformation will be the following JSON document ([JSONata link](http://try.jsonata.org/B1ctn36ub)):
 
 ```json
 {
@@ -87,7 +86,7 @@ I hope you've got the idea. Now you can also do something more complicated, like
 }
 ```
 
-resulting in ([jsonata link](http://try.jsonata.org/B1ctn36ub)):
+Resulting in ([JSONata link](http://try.jsonata.org/B1ctn36ub)):
 
 ```json
 {

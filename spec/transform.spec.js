@@ -1,8 +1,8 @@
 /* eslint-disable arrow-body-style */
 
 const { expect } = require('chai');
-const { messages } = require('elasticio-node');
 const logger = require('@elastic.io/component-commons-library').getLogger();
+const { messages } = require('../lib/utils');
 const transform = require('../lib/actions/transform');
 
 describe('Transformation test', () => {

@@ -1,3 +1,10 @@
+## 1.1.0 (November 19, 2025)
+
+*   Updated dependencies to the latest versions
+*   Removed unused `request` and `bunyan` dependencies
+*   Refactored the code to remove `elasticio-node` dependency to fix security vulnerabilities
+*   Improved `README.md`
+
 ## 1.0.13 (March 22, 2024)
 
 * Updated Sailor version to 2.7.2
