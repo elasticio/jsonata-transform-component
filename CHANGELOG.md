@@ -1,3 +1,8 @@
+## 1.1.1 (February 03, 2026)
+
+* Updated Sailor version to 2.7.8
+* Updated Node version to 24.x
+
 ## 1.1.0 (November 19, 2025)
 
 *   Updated dependencies to the latest versions

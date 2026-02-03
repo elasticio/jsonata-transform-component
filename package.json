@@ -23,7 +23,7 @@
     "test": "NODE_ENV=test mocha spec/*"
   },
   "engines": {
-    "node": "18.x"
+    "node": "24.x"
   },
   "dependencies": {
     "@elastic.io/component-commons-library": "4.0.0",
