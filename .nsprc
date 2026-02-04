@@ -1,0 +1,6 @@
+{
+  "GHSA-869p-cjfg-cm3x": {
+    "active": true,
+    "notes": "auth0/node-jws pulled via jsonwebtoken in @elastic.io/maester-client; not directly used by component runtime. Awaiting upstream fix."
+  }
+}

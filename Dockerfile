@@ -1,4 +1,4 @@
-FROM node:18-alpine AS base
+FROM node:24-alpine AS base
 RUN apk add --update git tini python3 make g++ && rm -rf /var/cache/apk/*
 WORKDIR /home/node
 COPY --chown=node:node . ./
