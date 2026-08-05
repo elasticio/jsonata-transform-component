@@ -82,4 +82,55 @@ describe('Transformation test', () => {
       });
     });
   });
+
+  it('should emit each item as separate message when evaluation result is an array', async () => {
+    const emitted = [];
+    const context = {
+      logger,
+      emit: (event, data) => {
+        if (event === 'data') {
+          emitted.push(data);
+        }
+        return Promise.resolve();
+      },
+    };
+    const msg = messages.newMessageWithBody({
+      items: [
+        { id: 1, name: 'Item 1' },
+        { id: 2, name: 'Item 2' },
+      ],
+    });
+    const cfg = {
+      expression: 'items',
+    };
+
+    await transform.process.call(context, msg, cfg);
+    expect(emitted).to.have.lengthOf(2);
+    expect(emitted[0].body).to.deep.equal({ id: 1, name: 'Item 1' });
+    expect(emitted[1].body).to.deep.equal({ id: 2, name: 'Item 2' });
+  });
+
+  it('should log error message and throw informative error on transformation failure', async () => {
+    let loggedErrorMsg = '';
+    const mockLogger = {
+      info: () => {},
+      error: (msg) => {
+        loggedErrorMsg = msg;
+      },
+    };
+    const msg = messages.newMessageWithBody({
+      first: 'Renat',
+    });
+    const cfg = {
+      expression: '{ "invalid": ',
+    };
+
+    try {
+      await transform.process.call({ logger: mockLogger }, msg, cfg);
+      expect.fail('Should have thrown an error');
+    } catch (err) {
+      expect(err.message).to.include('Jsonata transformation failed:');
+      expect(loggedErrorMsg).to.include('Jsonata transformation failed:');
+    }
+  });
 });

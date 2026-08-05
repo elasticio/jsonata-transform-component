@@ -1,3 +1,7 @@
+## 1.1.2 (August 05, 2026)
+
+* Improved diagnostics and error logging for JSONata transformation evaluation failures
+
 ## 1.1.1 (February 04, 2026)
 
 * Updated Sailor version to 2.7.8
