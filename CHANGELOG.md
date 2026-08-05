@@ -1,4 +1,4 @@
-## 1.1.2 (August 03, 2026)
+## 1.1.2 (August 05, 2026)
 
 * Improved diagnostics and error logging for JSONata transformation evaluation failures
 
